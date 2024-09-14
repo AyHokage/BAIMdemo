@@ -1,0 +1,348 @@
+/* body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    background: #ccc;
+  } */
+
+  .img {
+    margin: 10px;
+  }
+
+  .container {
+    display: flex;
+    margin: 16px;
+    font-size: 1rem;
+    border: 3px solid #eaebef;
+    border-radius: 16px;
+    padding: 20px; 
+    color: #252525;
+    font-weight: 700px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  
+  .bookContainer {
+    width: auto;
+    animation: goLeft 3s;
+  }
+
+  .bookContainer:hover, .bookContainer:active {
+    padding-left: 250px;
+  }
+  
+
+
+  .book {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 350px;
+    cursor: pointer;
+    backface-visibility: visible;
+    /* animation: goLeft 3s; */
+  }
+
+/* .bookContainer:hover {
+  transform: translateX(200px);
+} */
+ 
+  @keyframes goLeft {
+    0% {
+      margin: 0;
+    }
+    100% {
+      padding-left: 250px;
+    }
+  }
+
+  @keyframes goRight {
+    0% {
+      margin: 0;
+    }
+    100% {
+      padding-right: 250px;
+    }
+  }
+
+
+  
+  .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    top: 0; left: 0;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+  }
+  
+  .front, .back {
+    background: #3D8584;
+  }
+  
+  .front {
+    animation: front 3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .back {
+    animation: back 3s;
+  }
+  
+  .front, .page1, .page3, .page5 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .back, .page2, .page4, .page6 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .page1 { 
+    background: #efefef;
+  }
+  
+  .page2 {
+    background: #efefef;
+  }
+  
+  .page3 {
+    background: #f5f5f5;
+  }
+  
+  .page4 {
+    background: #f5f5f5;
+  }
+  
+  .page5 {
+    background: #fafafa;
+  }
+  
+  .page6 {
+    background: #fdfdfd;
+    border-left: 1px solid rgb(190, 190, 190);
+    
+  }
+
+  .content {
+    width: calc(100% - 400px);
+    margin-left: 350px;
+  }
+
+  
+  
+  .bookContainer:hover .front, .bookContainer:active .front {
+    transform: rotateY(-160deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  @keyframes front {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-160deg) scale(1);
+    }
+  }
+  
+  @keyframes back {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-20deg) scale(1);
+    }
+  }
+  
+  @keyframes first {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-150deg) scale(1);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+  }
+  
+  .page1 {
+    animation: first 3s;
+  }
+  
+  .bookContainer:hover .page1, .bookContainer:active .page1 {
+    transform: rotateY(-150deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  @keyframes second {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-30deg) scale(1);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+  }
+  
+  .page2 {
+    animation: second 3s;
+  }
+  
+  .bookContainer:hover .page2, .bookContainer:active .page2 {
+    transform: rotateY(-30deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  @keyframes third {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-140deg) scale(1);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+  }
+  
+  .page3 {
+    animation: third 3s;
+  }
+  
+  .bookContainer:hover .page3, .bookContainer:active .page3 {
+    transform: rotateY(-140deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  @keyframes fourth {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-40deg) scale(1);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+  }
+  
+  .page4 {
+    animation: fourth 3s;
+  }
+  
+  .bookContainer:hover .page4, .bookContainer:active .page4 {
+    transform: rotateY(-40deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  @keyframes fifth {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-130deg) scale(1);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+  }
+  
+  .page5 {
+    animation: fifth 3s;
+  }
+  
+  .bookContainer:hover .page5, .bookContainer:active .page5 {
+    transform: rotateY(-130deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  @keyframes sixth {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    100% {
+      transform: rotateY(-50deg) scale(1);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+  }    
+  
+  .page6 {
+    animation: sixth 3s;
+  }
+  
+  .bookContainer:hover .page6, .bookContainer:active .page6 {
+    transform: rotateY(-50deg) scale(1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .bookContainer:hover .back, .bookContainer:active .back {
+    transform: rotateY(-20deg) scale(1);
+  }
+  
+
+  @media only screen and (max-width: 1290px) {
+    .container {
+      font-size: 1.1rem;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 1000px) {
+    .container {
+      flex-direction: column;
+    }
+    .content {
+      width: 100%;
+      margin: 30px 0;
+    }
+    .book {
+      display: flex;
+      justify-content: center;
+      margin-left: calc(50% - 120px);
+    }
+    
+  }
+
+  @media only screen and (max-width: 500px) {
+    .img {
+      width: 130px;
+      height: 100px;
+    }
+    .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+      width: 150px;
+    }
+    .book {
+      height: 250px;
+    }
+    @keyframes goLeft {
+      0% {
+        margin: 0;
+      }
+      100% {
+        padding-left: 150px;
+      }
+    }
+
+    .frontImg {
+      width: 150px;
+      height: 250px;
+    }
+
+    .book {
+      margin-left: calc(50% - 70px);
+    }
+
+    .bookContainer:hover, .bookContainer:active {
+      padding-left: 150px;
+    }
+    
+  }
+
+
+
+/* 
+  @media only screen and (max-width: 1290px) {
+    .container {
+      font-size: 0.9rem;
+    }
+  } */

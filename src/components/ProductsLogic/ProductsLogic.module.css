@@ -1,0 +1,67 @@
+.container {
+    width: 100%;
+}
+
+.horizontal {
+    display: flex;
+    margin: 20px;
+    width: calc(100vw - 90px);
+    font-size: 1.1rem;
+    border: 3px solid #eaebef;
+    background-color: #eaebef;
+    border-radius: 16px;
+    padding: 20px;
+    color: #3d8584;
+    font-weight: 700px; 
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .containerNone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 20px;
+    width: calc(100vw - 50px);
+    height: 30vh;
+    border-radius: 15px;
+    border: 1px dashed #cbccce;
+  }
+
+  .cardsContainer {
+    width: calc(100vw - 100px);
+  }
+  
+  .noProductsText {
+    font-size: 22px;
+    color: #cbccce;
+  }
+
+  .smallFilters {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1030px) {
+    .smallFilters {
+      display: block;
+    }
+    .bigFilters {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .horizontal {
+      display: block;
+    }
+    .heading {
+      text-align: center;
+    }
+  }

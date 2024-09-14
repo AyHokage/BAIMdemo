@@ -1,0 +1,28 @@
+.title {
+    font-weight: 700;
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  .horizontal {
+    display: flex;
+    margin: 20px;
+    width: calc(100vw - 86px);
+    font-size: 1.1rem;
+    border: 3px solid #eaebef;
+    background-color: #eaebef;
+    border-radius: 16px;
+    padding: 20px;
+    color: #3d8584;
+    font-weight: 700px; 
+  }
+  
+  .cardsContainer { 
+    width: calc(100vw - 86px); 
+  }
+   
+  @media only screen and (max-width: 1030px) {
+    .horizontal { 
+      font-size: 0.9rem;
+    }
+  }

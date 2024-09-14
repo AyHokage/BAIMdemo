@@ -1,0 +1,70 @@
+.btn {
+    width: 112px;
+    height: 112px;
+    z-index: 0.9;
+    background-color: #66d3d1;
+    top: 210px;
+    color: white;
+    font-size: 1.5rem;
+    left: calc(50vw - 55px);
+    animation: heartBeat 0.75s alternate infinite;
+    cursor: pointer;
+  }
+  
+  .circle {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .phone {
+      animation: beat 0.75s infinite alternate;
+      font-size: 2.5rem;
+  }
+  
+  @keyframes beat {
+      0% {
+          font-size: 2rem;
+      }
+      100% {
+          font-size: 2.5rem;
+      }
+  }
+  
+  
+  @keyframes heartBeat {
+      0% {
+          transform: scale(0.9);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
+  .center {
+      width: 124px;
+      height: 124px;
+      background-color: white;
+      position: absolute;
+      z-index: 0.9;
+      border: 1px solid transparent;
+      top: 200px;
+      left: calc(50vw - 62px);
+    }
+  
+  
+  
+  
+  /* responsive */
+  
+  @media only screen and (max-width: 800px) {
+      .btn {
+          top: 240px
+      }
+      
+      .center {
+          top: 230px;
+      }
+  }
+  
+  

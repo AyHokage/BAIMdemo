@@ -1,0 +1,26 @@
+.themes {
+    border: 2px solid #cbccce;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.selectedTheme {
+    background-color: #eaebef;
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.p {
+    margin: 0 10px;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 800;
+  }

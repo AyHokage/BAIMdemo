@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bg {
+    background-color: #eaebef;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    color: blue;
+}

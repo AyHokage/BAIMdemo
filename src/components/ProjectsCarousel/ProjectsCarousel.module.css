@@ -1,0 +1,101 @@
+/* ProjectCarousel.module.css */
+
+/* Local class names */
+
+
+
+.arrow {
+    background: #b1d5d5;
+    border: 1px solid #b1d5d5;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    color: #3d8584;
+    position: absolute;
+  }
+ 
+.heading { 
+  font-size: 2.5rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #3d8584;
+}
+
+.carouselWrapper {
+    width: 100%;
+    max-width: 964px;
+    position: relative;
+  }
+  
+  .carousel {
+    margin: 50px 0;
+    padding: 20px 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background-color: #eaebef;
+    ;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  .prevButton,
+  .nextButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    padding: 8px;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .prevButton {
+    z-index: 1;
+    margin-top: 186px;
+    left: 20px;
+  }
+  
+  .nextButton {
+    z-index: 1;
+    margin-top: 186px;
+    right: 20px;
+  }
+  
+  .content {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    width: 400px;
+    height: auto;
+    margin: 0 50px;
+    background: #efefef;
+    border-radius: 15px;
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .item {
+      width: 70%;
+    }
+    .prevButton {
+      margin-top: 130px;
+      left: 6px;
+    }
+    .nextButton {
+      margin-top: 130px;
+      right: 6px;
+    }
+    .carousel {
+      margin: 10px 0;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+  }

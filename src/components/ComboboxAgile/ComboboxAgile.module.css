@@ -1,0 +1,166 @@
+.container {
+    position: relative;
+}
+
+.selectBtn{
+    width: 250px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border: 2px solid #3d8584;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.blueSelectBtn {
+    width: 250px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border: 2px solid #007bff;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 10px;
+    color: #007bff;
+}
+
+.selectBtn .btnText{
+    font-weight: 400;
+    color: #3d8584;
+}
+.blueSelectBtn .btnText{
+    font-weight: 400;
+    color: #007bff;
+}
+.selectBtn .arrowDwn{
+    display: flex;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #3d8584;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.selectBtn.open .arrowDwn{
+    transform: rotate(-180deg);
+}
+
+.blueSelectBtn .blueArrowDwn{
+    display: flex;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #007bff;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.blueSelectBbtn.open .blueArrowDwn{
+    transform: rotate(-180deg);
+}
+
+.listItems{
+    display: none;
+}
+
+.listItemsOpen {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 12px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(0, 123, 255,0.2);
+    display: block;
+    width: 250px;
+}
+
+.listItemsOpen .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.listItemsOpen .blueItem{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+    color: #007bff;
+}
+.listItemsOpen .item:hover{
+    background-color: #ddf7f6;
+}
+.listItemsOpen .blueItem:hover{
+    background-color: #daeafc;
+}
+.item .itemText{
+    color: #3d8584;
+}
+.selected {
+    background-color: #c7eeed;
+}
+.selected.blueItem {
+    background-color: #c6e0ff;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #3d8584;
+    transition: all 0.3s ease-in-out;
+    color: #3d8584;
+}
+.item.checked .checkbox{
+    background-color: #3d8584;
+    border-color: #3d8584;
+}
+.checkbox .checkIcon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+    color: #3d8584;
+    background-color: #3d8584;
+}
+.item.checked .checkIcon{
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 760px) { 
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .selectBtn {
+        margin: 20px 0;
+    }
+    .listItemsOpen {
+        margin-top: 80px;
+        margin-left: 0;
+    }
+}

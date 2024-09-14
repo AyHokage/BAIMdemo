@@ -1,0 +1,52 @@
+.desc {
+    border: 6px solid #eaebef;
+    border-radius: 15px;
+    margin: 20px 6%;
+    width: 88%;
+    color: #252525;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left; 
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ico {
+    font-size: 2rem;
+    margin: 20px 20px 20px 50px;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.text {
+    padding: 20px 50px;
+}
+
+.p {
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 760px) {
+    .text {
+        padding: 0 20px;
+    }
+    .desc {
+        font-size: 1rem;
+    }
+    .ico {
+        font-size: 1.8rem;
+        margin: 10px 10px 10px 20px;
+    }
+    .p {
+        margin: 10px 0;
+    }
+  }

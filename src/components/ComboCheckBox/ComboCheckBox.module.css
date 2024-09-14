@@ -1,0 +1,94 @@
+.container{
+    position: relative;
+}
+.selectBtn{
+    width: 200px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border: 2px solid #007bff;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.selectBtn .btnText{
+    font-weight: 400;
+    color: #007bff;
+}
+.selectBtn .arrowDwn{
+    display: flex;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #007bff;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.selectBbtn.open .arrowDwn{
+    transform: rotate(-180deg);
+}
+.listItems{
+    display: none;
+}
+
+.listItemsOpen {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 12px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(0, 123, 255,0.2);
+    display: block;
+    width: 200px;
+}
+
+.listItemsOpen .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.listItemsOpen .item:hover{
+    background-color: #daeafc;
+}
+.item .itemText{
+    color: #007bff;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #007bff;
+    transition: all 0.3s ease-in-out;
+    color: #007bff;
+}
+.item.checked .checkbox{
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.checkbox .checkIcon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+    color: #007bff;
+    background-color: #007bff;
+}
+.item.checked .checkIcon{
+    transform: scale(1);
+}

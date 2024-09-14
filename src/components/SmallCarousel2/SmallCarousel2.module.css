@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0; /* Adjust padding accordingly */
+    text-align: center;
+    color: #3d8584;
+    background-color: #EFEFEF;
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+.sliderImg {
+    height: 100px;
+    width: 250px; /* Adjust size of the images */
+}
+
+@keyframes scroll { 
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * var(--total-items))); /* Adjust the translation based on the total number of images */
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125) inset,
+                0 -10px 20px -5px rgba(0, 0, 0, 0.125) inset,
+                -10px 0 20px -5px #efefef inset,
+                10px 0 20px -5px #efefef inset;
+    height: 100px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width:1600px;
+    --total-items: 14; /* Default total number of items */
+    --animation-duration: 10s; /* Default animation duration */
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(
+        to right,
+        #efefef 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slideTrack {
+    animation: scroll calc(var(--animation-duration) * var(--total-items)) linear infinite; /* Update the animation duration based on the total number of items */
+    display: flex;
+    width: calc(250px * var(--total-items)); /* Adjust the width based on the width of individual slides and the total number of items */
+}
+
+.slider .slide {
+    height: 100px; /* Keep the height consistent */
+    width: 250px; /* Adjust the width of individual slides */
+}
+
+@media screen and (max-width: 768px) {
+    .slider .slideTrack {
+        animation: scroll-mobile calc(var(--animation-duration) * var(--total-items)) linear infinite; /* Adjust animation properties for smaller screens */
+        width: calc(150px * var(--total-items)); /* Adjust the width of the slide track for smaller screens */
+    }
+    .slider .slide {
+        width: 150px; /* Adjust the width of individual slides for smaller screens */
+    }
+}

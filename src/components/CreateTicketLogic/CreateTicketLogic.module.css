@@ -1,0 +1,313 @@
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    margin: 7px 0;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .themes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .participants {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .labelParticipant {
+    margin: 20px 10px 0 5px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .shown {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .more {
+    width: 200px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #777778;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .more:hover {
+    color: #9c9c9d;
+  }
+ 
+  .participant {
+    border: 1px solid #cbccce;
+    color: #777778;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .participant:hover {
+    cursor: pointer;
+    color: red;
+    border-color: red;
+  }
+
+  .addParticipant {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .leftIco {
+    margin-right: 10px;
+  }
+
+  .rightIco {
+    margin-left: 20px;
+  }
+
+  .miniPlus {
+    color: #00ae29;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .inputParticipant {
+    padding: 10px 20px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    color: grey;
+    justify-content: center;
+    font-size: 16px;
+    width: calc(100% - 2rem - 50px);
+  }
+
+  .radioImg {
+    width: 80px;
+    height: 80px;
+    margin: 16px 0;
+    border-radius: 50%;
+    border: 3px solid transparent;
+  }
+
+  .chosenRadioImg {
+    width: 80px;
+    height: 80px;
+    margin: 16px 0;
+    border-radius: 50%;
+    border: 3px solid blue;
+  }
+
+  .chosenRadioImg:hover, .radioImg:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+  }
+  
+  .input {
+    padding: 10px 20px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    color: grey;
+    justify-content: center;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .inputDesc {
+    resize: none;
+    min-height: 200px;
+    padding: 10px 20px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    color: grey;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .imageContainer {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+  .label {
+    margin: 20px 0 0 5px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .heading {
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  .title {
+    font-weight: 400;
+    width: 80%;
+  }
+  .id {
+    margin-bottom: 10px;
+  }
+  .desc {
+    width: 90%;
+  }
+  .products {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 96%;
+  }
+  .containerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: "100%";
+    padding: 0 0 0 20px;
+  }
+  .hr {
+    border: 2px solid #3d8584;
+    margin: 20px 30px;
+  }
+  
+  .show {
+    display: none;
+  }
+  
+  .horizontal {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .imgContainer {
+    border-radius: 15px;
+    background-color: #eaebef;
+    width: 280px;
+    height: 220px;
+  }
+  .productTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .productContent {
+    padding-left: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 220px;
+  }
+  
+  .containerNone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    border-radius: 15px;
+    border: 1px dashed #cbccce;
+  }
+  
+  .noProductsText {
+    font-size: 22px;
+    color: #cbccce;
+  }
+  
+  .deleteForm {
+    display: block !important;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: calc(50vw - 125px);
+  }
+  
+  .containerHidden {
+    display: none;
+  }
+  
+  .editBtn {
+    display: block;
+    color: #3d8584;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 220px;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 60vh;
+  }
+  .inputs {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 80px;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .upload {
+    background-color: #eaebef;
+    border: 2px solid transparent;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777778;
+  }
+
+  .none {
+    display: none;
+  }
+
+  
+  .combo {
+    position: relative;
+    width: calc(100% - 33px);
+    margin-right: 38px;
+    margin-top: 10px;
+  }

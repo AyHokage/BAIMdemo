@@ -1,0 +1,115 @@
+.container{
+    width: calc(50% - 10px);
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.selectBtn{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    border: 2px solid #3d8584;
+    border-radius: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.selectBtn .btnText{
+    font-weight: 400;
+    color: #3d8584;
+}
+.selectBtn .arrowDwn{
+    display: flex;
+    font-size: 1.6rem;
+    color: #3d8584;
+    transition: 0.3s;
+}
+.selectBbtn.open .arrowDwn{
+    transform: rotate(-180deg);
+}
+.listItems{
+    display: none;
+    width: calc(50% - 10px);
+}
+
+.listItemsOpen {
+    position: absolute;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgb(0, 123, 255,0.2);
+    display: block;
+    width: 150px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+
+.listItemsOpen::-webkit-scrollbar {
+    margin: 6px;
+    width: 8px;
+    background: #eaebef;
+    border-radius: 8px;
+  }
+  
+  .listItemsOpen::-webkit-scrollbar-thumb {
+    background: #66d3d1;
+    border-radius: 8px;
+  }
+
+.listItemsOpen .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+.listItemsOpen .item:hover{
+    background-color: #daeafc;
+}
+.item .itemText{
+    color: #3d8584;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #a7a8a8;
+    transition: all 0.3s ease-in-out;
+    color: #3d8584;
+}
+.item.checked .checkbox{
+    background-color: #3d8584;
+    border-color: #3d8584;
+}
+.checkbox .checkIcon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+    color: #3d8584;
+    background-color: #3d8584;
+}
+.item.checked .checkIcon{
+    transform: scale(1);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .listItemsOpen {
+        position: absolute;
+        margin-top: 15px;
+        right: calc(50vw - 116px);
+        left: calc(50vw - 116px);
+        width: 200px;
+    }
+}

@@ -1,0 +1,14 @@
+.container {
+  /* background-color: #f8f9fd; */
+  background-color: #eaebef;
+  min-height: 100vh;
+  padding: 0 20px 0 100px;
+}
+
+.green {
+  /* background-color: #f8f9fd; */
+  background-image: url('/space.jpg');
+  background-color: #0b3af4;
+  min-height: 100vh;
+  padding: 0 20px 0 100px;
+}

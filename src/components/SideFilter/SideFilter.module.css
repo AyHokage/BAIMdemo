@@ -1,0 +1,231 @@
+.clients {
+  width: calc(100vw - 100px);
+  display: flex;
+}
+
+.clientsFilter {
+  width: 38%;
+}
+
+.sideFilters {
+  font-size: 1.1rem;
+  border: 3px solid #eaebef;
+  background-color: #eaebef;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  color: #3d8584;
+  font-weight: 700px;
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.sideFilters::-webkit-scrollbar {
+  margin: 6px;
+  width: 6px;
+  background: #eaebef;
+  border-radius: 8px;
+}
+
+.sideFilters::-webkit-scrollbar-thumb {
+  background: #66d3d1;
+  border-radius: 8px;
+}
+
+.title {
+    font-weight: 700;
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: calc(100vw - 100px);
+    font-size: 1.1rem;
+    border: 3px solid #eaebef;
+    background-color: #eaebef;
+    border-radius: 16px;
+    padding: 20px;
+    color: #3d8584;
+    font-weight: 700px;
+  }
+
+  .filters {
+    justify-content: space-between;
+    width: 100%;
+    display: none
+  }
+
+  .searchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    border-radius: 16px;
+    padding: 0 16px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .input {
+    outline: none;
+    color: #252525;
+    font-size: 1.1rem;
+  }
+
+
+
+  .filterHeading {
+    margin: 20px 16px;
+  }
+
+
+  .checkboxContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    color: #3d8584;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  
+
+  .showFilters {
+    display: flex;
+    margin: 20px;
+    width: calc(100vw - 100px);
+    font-size: 1.1rem;
+    border: 3px solid #eaebef;
+    background-color: #eaebef;
+    border-radius: 16px;
+    padding: 20px;
+    color: #3d8584;
+    font-weight: 700px;
+  }
+
+  .deleteFilter {
+    border: 2px solid #3d8584;
+    background-color: #3d8584;
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .deleteAllFilters {
+    border: 2px solid #3d8584;
+    background-color: white;
+    color: #3d8584;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .none { 
+    display: none;
+  }
+
+
+
+
+
+  .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+}
+.checkboxContainer:hover{
+    background-color: #e1fdfd;
+}
+.item .itemText{
+    color: #767676;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+.item.checked .checkbox{
+    background-color: #3d8584;
+    border-color: #3d8584;
+}
+.checkbox .checkIcon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+.item.checked .checkIcon{
+    transform: scale(1);
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .filters {
+      display: flex; 
+    }
+    .showFilters {
+      display: none;
+    }
+    .sideFilters {
+      display: none;
+    }
+    .searchContainer {
+      margin: 10px 0;
+      width: 90%;
+    }
+    .cardsContainer {
+      width:  calc(100vw - 86px);
+    }
+    .filters {
+      width: 80%;
+    }
+    .horizontal {
+      font-size: 0.9rem;
+      width:  calc(100vw - 86px);
+      flex-direction: column;
+      align-items: center;
+    }
+}

@@ -1,0 +1,45 @@
+.textAndImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 100px 10%;
+  font-size: 1.5rem;
+}
+
+.text { 
+  margin-left: 40%;
+  width: 60%;
+}
+
+.img {
+  width: calc(32vw - 30px);
+  height: auto;
+  align-self: flex-end;
+}
+
+.heading {
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .img {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  .textAndImg {
+    display: block;
+    width: 80%;
+  }
+  .text {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .textAndImg {
+    font-size: 1.1rem;
+  }
+}

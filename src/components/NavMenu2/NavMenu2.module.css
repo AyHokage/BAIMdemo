@@ -1,0 +1,209 @@
+.container{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/* .selectBtn {
+    padding: 20px;
+    border: 1px solid #3d8584;
+    color: #3d8584;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    background-image: linear-gradient(
+      to right,
+      white calc(100% - 40px),
+      #66d3d1 40px
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    z-index: 0.9;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+  } */
+
+/* .selectBtn{
+    width: 250px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border: 2px solid #3d8584;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 0 10px;
+} */
+
+.selectBtn .btnText{
+    font-weight: 400;
+    color: #3d8584;
+}
+.selectBtn .arrowDwn{
+    display: flex;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #3d8584;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.selectBbtn.open .arrowDwn{
+    transform: rotate(-180deg);
+}
+.listItems{
+    display: none;
+}
+
+.listItemsOpen {
+    position: absolute;
+    margin-left: 2px;
+    border-radius: 8px;
+    background-color: #d8ecf1;
+    box-shadow: 0 5px 10px rgb(0, 123, 255,0.2);
+    display: block;
+    width: 190px;
+    height: 460px;
+    overflow-y: scroll;
+    margin-left: 10px;
+}
+
+.listItemsOpen::-webkit-scrollbar {
+    margin: 6px;
+    width: 6px;
+    background: #d8ecf1;
+    border-radius: 8px;
+  }
+  
+  .listItemsOpen::-webkit-scrollbar-thumb {
+    background: #66d3d1;
+    border-radius: 8px;
+  }
+
+.listItemsOpen .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.listItemsOpen .item:hover{
+    background-color: #ddf7f6;
+}
+.item .itemText{
+    color: #3d8584;
+    width: 100%;
+    padding: 0 15px;
+}
+.selected {
+    background-color: #c7eeed;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #3d8584;
+    transition: all 0.3s ease-in-out;
+    color: #3d8584;
+}
+.item.checked .checkbox{
+    background-color: #3d8584;
+    border-color: #3d8584;
+}
+.checkbox .checkIcon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+    color: #3d8584;
+    background-color: #3d8584;
+}
+.item.checked .checkIcon{
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .selectBtn {
+        margin: 20px 0;
+    }
+    .listItemsOpen {
+        margin-top: 80px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .selectBtn {
+        padding: 20px;
+        border: 1px solid #3d8584;
+        color: #3d8584;
+        font-size: 1.1rem;
+        border-radius: 20px;
+        background-image: linear-gradient(
+          to right,
+          white calc(100% - 50px),
+          #66d3d1 50px
+        );
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        z-index: 0.9;
+        padding: 10px;
+        margin: 8px;
+        width: 150px;
+      }    
+      .white {
+        color: white;
+        margin-left: 10px;
+      }
+}
+
+.selectBtn {
+    background-color: white;
+    color: #3d8584;
+    z-index: 0.9;
+    padding: 10px 20px;
+    margin-bottom: 22px;
+    border: 1px solid #3d8584;
+    font-size: 1.1rem;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .selectBtn {
+        margin-bottom: 6px;
+        padding: 10px 26px;
+    }
+    .menu {
+        display: none;
+    }
+    .white {
+        color: #3d8584;
+        font-size: 1.1rem;
+        font-weight: bolder;
+    }
+    .listItemsOpen {
+        margin-left: 130px;
+        z-index: 1;
+    }
+}

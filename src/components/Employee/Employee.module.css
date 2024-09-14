@@ -1,0 +1,39 @@
+.whiteBlock {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 16px;
+    color: #3d8584;
+    margin: 20px;
+    padding: 20px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text {
+    width: 90%;
+    margin: 20px 10%;
+    color: #252525;
+}
+
+.heading {
+    margin: 10px 0;
+}
+
+.img {
+    width: 90%;
+    height: auto;
+}
+
+.none {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .whiteBlock {
+        width: 80%
+    }
+}

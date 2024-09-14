@@ -1,0 +1,95 @@
+.pagination, .paginationNums {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    overflow-x: scroll;
+  }
+
+  .pagination::-webkit-scrollbar, .paginationNums::-webkit-scrollbar {
+    margin: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+  }
+  
+  .paginations::-webkit-scrollbar-thumb, .paginationNums::-webkit-scrollbar-thumb {
+    background: #66d3d1;
+    border-radius: 8px;
+  }
+  
+  .pagination li, .paginationNums li {
+    list-style-type: none;
+    margin: 0 10px;
+  }
+  
+  .pagination button, .paginationNums button {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination button:hover, .paginationNums button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button:disabled, .paginationNums button:disabled {
+    background: #cccccc;
+    border-color: transparent;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+  
+  .pagination .activeButton, .paginationNums .activeButton {
+    background-color: #eaebef;
+    color: white;
+    border-color: #eaebef;
+    font-weight: bold;
+  }
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .pagination .active button, .paginationNums .active button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+
+
+  .paginationNums {
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .big {
+    display: flex;
+  }
+
+  .adapt {
+    display: none;
+  }
+
+  .none {
+    display: none;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .big {
+      display: none;
+    }
+    .adapt {
+      display: flex;
+    }
+  }

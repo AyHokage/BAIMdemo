@@ -1,0 +1,109 @@
+.horizontal {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  font-size: 1.1rem;
+  border: 3px solid #eaebef;
+  border-radius: 16px;
+  padding: 20px; 
+  color: #252525;
+  font-weight: 700px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+ 
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  width: 200px;
+  padding: 10px 0;
+  margin: 20px 0;
+  background-color: #eaebef;
+  color: #252525;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: transparent;
+  height: inherit;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 250px;
+  height: 100px;
+}
+
+.productContent {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  width: 80%;
+}
+
+.desc {
+  word-wrap: break-word; /* позволяет тексту переноситься на новую строку, если он не помещается */
+  overflow: hidden; /* скрывает текст, который не помещается в контейнер */
+  max-width: 100%; /* ограничивает ширину текста до 100% ширины контейнера */
+}
+
+
+
+
+@media only screen and (max-width: 1030px) {
+  /* .horizontal {
+   width:  calc(100vw - 86px);
+  } */
+  .horizontalClient {
+   width: 100%; 
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+ .horizontal, .horizontalClient {
+  font-size: 1rem; 
+ }
+ .productContent {
+   align-items: center;
+   margin-left: 0;
+   width: 98%;
+ }
+ .desc {
+  width: 100%;
+ }
+ .productTitle {
+   width: 100%;
+   justify-content: center;
+ }
+ .title {
+   width: 100%;
+ }
+}
+
+@media only screen and (max-width: 700px) {
+ .horizontal, .horizontalClient {
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+ }
+ .container { 
+   width: 80%;
+   margin: 20px;
+ }
+}

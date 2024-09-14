@@ -1,0 +1,24 @@
+.container {
+    background-color: #daeafc;
+    border: 2px solid #daeafc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: 2px solid transparent;
+    color: #7e7e7e;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.underlined {
+    border-bottom: 2px solid #dadada;
+}
+
+.ico {
+    margin: 6px;
+}

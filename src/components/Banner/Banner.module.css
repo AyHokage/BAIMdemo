@@ -1,0 +1,252 @@
+.heading {
+    color: #4a8f9a;
+    border-radius: 10px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    /* background-color: #64C4D2; */
+    padding: 20px;
+    position: absolute;
+    top: 420px;
+    animation: apeare 2s, pulse 1s alternate infinite;
+}
+
+.carouselImage {
+    height: calc(100vh - 400px);
+    width: calc(100vw - 100px);
+    border-radius: 20px;
+  }
+
+.activeHeading {
+    color: white;
+    border-radius: 10px;
+    font-size: 2.1rem;
+    background-color: #64C4D2;
+    padding: 20px;
+    position: absolute;
+    top: 420px;
+}
+
+/* .activePC {
+    animation: animatePC 3s;
+} */
+/*
+.activeFolder {
+    animation: animateFolder 1s;
+}
+
+.activeGirl {
+    animation: grow 2s;
+} */
+
+
+@keyframes apeare {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cash1 {
+    position: absolute;
+    left: 80px;
+    top: 100px;
+}
+
+.cash2 {
+    position: absolute;
+    left: 420px;
+    top: 200px;
+}
+
+.pc {
+    position: absolute;
+    width: 500px;
+    height: 380px;
+    right: calc(50vw - 250px);
+    top: 20px;
+    animation: animatePC 3s;
+}
+
+.plant {
+    position: absolute;
+    right: 100px;
+    top: 240px;
+    animation: animatePlant 2.5s;
+}
+
+.container {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    height: calc(100vh -350px);
+    width: calc(100% - 100px);
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.guy {
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    animation: animateGuy 1.5s;
+}
+
+.folder {
+    position: absolute;
+    left: 100px;
+    top: 240px;
+    animation: animateFolder 1s;
+}
+
+.girl {
+    position: absolute;
+    right: 200px;
+    top: 130px;
+    animation: grow 2s;
+}
+
+@keyframes animatePC {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        width: 600px;
+        height: 450px;
+        right: calc(50vw - 300px);
+        top: 100px;
+    }
+    100% {
+        opacity: 1;
+        width: 500px;
+        height: 380px;
+        right: calc(50vw - 250px);
+        top: 20px;
+    }
+}
+
+@keyframes grow {
+    0% {
+        opacity:0
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        right: 150px;
+        top: 150px;
+        width: 300px;
+        height: 300px;
+    }
+    100% {
+        right: 200px;
+        top: 130px;
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@keyframes animateFolder {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        left: -20px;
+        top: 240px;
+    }
+    100% {
+        left: 100px;
+        top: 240px;
+    }
+}
+
+@keyframes animateGuy {
+    0% {
+        opacity: 0;
+        top: 0;
+        right: 400px;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        top: 0;
+        right: 400px;
+    }
+    100% {
+        top: 70px;
+        left: 200px;
+    }
+}
+
+@keyframes flyFromDownLeftToCenter {
+    0% {
+        bottom: 50px;
+        left: 80px;
+    }
+    100% {
+        bottom: 300px;
+        left: 400px;
+    }
+}
+
+@keyframes flyFromUpRightToCenter {
+    0% {
+        top: 50px;
+        right: 80px;
+    }
+    100% {
+        top: 200px;
+        right: 500px;
+    }
+}
+
+@keyframes flyUpDownLeftToCenter {
+    0% {
+        bottom: 50px;
+        left: 80px;
+    }
+    100% {
+        bottom: 300px;
+        left: 400px;
+    }
+}
+
+@keyframes animatePlant {
+    0% {
+        opacity:0
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+        right: 0px;
+        top: 240px;
+    }
+    100% {
+        right: 100px;
+        top: 240px;
+    }
+}

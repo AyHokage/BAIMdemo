@@ -1,0 +1,41 @@
+.grayBlock {
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: #3d8584;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blueBlock {
+    width: 100%;
+    background-color: #3d8584;;
+    border: 1px solid #3d8584;;
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.heading {
+    margin: 20px;
+}
+
+.ico {
+    font-size: 3.5rem;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+    .p {
+        display: none;
+    }
+}

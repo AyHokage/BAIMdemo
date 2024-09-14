@@ -1,0 +1,130 @@
+.selectBtn .btnText{
+    font-weight: 400;
+    color: #3d8584;
+}
+.selectBtn .arrowDwn{
+    display: flex;
+    height: 22px;
+    width: 22px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #3d8584;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.selectBbtn.open .arrowDwn{
+    transform: rotate(-180deg);
+}
+.listItems{
+    display: none;
+}
+
+.listItemsOpen {
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 6px;
+    border-radius: 8px;
+    background-color: #d8ecf1;
+    box-shadow: 0 5px 10px rgb(0, 123, 255,0.2);
+    display: block;
+    width: 70px;
+    z-index: 1;
+}
+
+.listItemsOpen .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.listItemsOpen .item:hover{
+    background-color: #ddf7f6;
+}
+.itemSelected {
+    background-color: #9ab8b7;
+}
+.item .itemText{
+    color: #3d8584;
+}
+.selected {
+    background-color: #c7eeed;
+}
+.item .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1.5px solid #3d8584;
+    transition: all 0.3s ease-in-out;
+    color: #3d8584;
+}
+.item.checked .checkbox{
+    background-color: #3d8584;
+    border-color: #3d8584;
+}
+.checkbox .checkIcon{
+    color: #fff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+    color: #3d8584;
+    background-color: #3d8584;
+}
+.item.checked .checkIcon{
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 760px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .selectBtn {
+        margin: 20px 0;
+    }
+    .listItemsOpen {
+        margin-top: 80px;
+        margin-left: 0;
+    }
+}
+
+.selectBtn {
+    background-color: white;
+    color: #3d8584;
+    z-index: 0.9;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    margin: 0 0 15px 0;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .white {
+        color: #3d8584;
+        font-size: 1.1rem;
+        font-weight: bolder;
+    }
+    .listItemsOpen {
+        margin-left: 130px;
+        z-index: 1;
+    }
+}

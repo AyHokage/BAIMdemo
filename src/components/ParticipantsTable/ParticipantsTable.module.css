@@ -1,0 +1,122 @@
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 200;
+    background-color: #daeafc;
+  }
+  .grey {
+    color: #7e7e7e;
+  }
+  .tableHidden{
+    display: none;
+  }
+  .header,
+  .cell {
+    padding: 20px;
+    border-bottom: 1px solid #7e7e7e;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  .tr:hover {
+    background-color: #daeafc;
+    cursor: pointer;
+  }
+  .cellActions {
+    padding: 8px;
+    border-bottom: 1px solid #7e7e7e;
+    text-align: center;
+    width: 220px;
+  }
+  
+  .firstRowHeader {
+    border-bottom: none;
+  }
+  
+  .row:last-child .cell {
+    border-bottom: none;
+  }
+  
+  .actionButton {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .tbody {
+    font-size: 1rem;
+  }
+  .actionButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .headerActions {
+    padding: 8px 40px;
+    border-bottom: 1px solid #ddd;
+    text-align: end;
+  }
+  
+  .containerNone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    border-radius: 15px;
+    border: 1px dashed #cbccce;
+  }
+  
+  .noProductsText {
+    font-size: 22px;
+    color: #cbccce;
+  }
+
+  .manager.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .yellow {
+    color: goldenrod;
+    font-size: 0.5rem;
+    line-height: 0;
+  }
+
+  .flex {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .user {
+    border: 2px solid #7e7e7e;
+    padding: 0 2px;
+    border-radius: 6px;
+    height: 34px;
+    display: flex;
+    align-items: end;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+
+  .greyNum {
+    color: #7e7e7e;
+    margin-right: 6px;
+  }
+
+  .last.cell {
+    border: 1px solid transparent;
+  }

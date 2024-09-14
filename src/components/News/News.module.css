@@ -1,0 +1,88 @@
+.twoHalves {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+}
+
+.twoHalves.large { 
+  width: initial;
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 100px;
+}
+
+.half {
+  width: calc(40vw - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.centeredHeading {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2rem;
+}
+
+.circleImg {
+    margin-right: 20px;
+    border: 3px solid #efefef;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.link {
+  color: #3d8584;
+}
+
+@media only screen and (max-width: 1300px) {
+  .twoHalves {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .half {
+    width: calc(45vw - 20px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .twoHalves {
+    display: block;
+  }
+  .half {
+    width: 100%;
+  }
+  .circleImg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .circleImg {
+    width: 120px;
+    height: 120px;
+  }
+  .twoHalves {
+    font-size: 1rem;
+  }
+}

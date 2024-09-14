@@ -1,0 +1,137 @@
+.container {
+    position: absolute;
+    right: calc(50vw - 284px);
+    top: calc(50vh - 153px);
+    background-color: #eaebef;
+    border: 2px solid #eaebef;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.themes {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 568px;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+    height: 190px;
+}
+
+.themes::-webkit-scrollbar {
+    margin: 6px;
+    width: 8px;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  .themes::-webkit-scrollbar-thumb {
+    background: #b6b7b9;
+    border-radius: 8px;
+  }
+
+
+  .radioImg {
+    min-width: 120px;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border-radius: 16px;
+    border: 3px solid transparent;
+  }
+
+  .chosenRadioImg {
+    min-width: 160px;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border-radius: 16px;
+    border: 3px solid blue;
+  }
+
+  .chosenRadioImg:hover, .radioImg:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+  }
+
+.selectedTheme {
+    background-color: #cbccce;
+    min-width: 120px;
+    width: 160px;
+    height: 160px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.p {
+    margin: 0 10px;
+}
+
+.label {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px 30px;
+  }
+
+.none {
+    display: none;
+}
+
+.btns {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cancel {
+    background-color: #ff0000;
+}
+
+.cancel:hover {
+    background-color: #d80303;
+}
+
+.choose {
+    background-color: #00ae29;
+}
+
+.choose:hover {
+    background-color: #01801f;
+}
+
+.own {
+    background-color: #0089ff;
+}
+
+.own:hover {
+    background-color: #0372d4;
+}
+
+.upload {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #0089ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .upload:hover {
+    background-color: #0372d4;
+  }
+  

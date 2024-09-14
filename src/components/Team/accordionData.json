@@ -1,0 +1,119 @@
+{
+  "ru": [
+    {
+      "name": "Шамсаддин Вахабли",
+      "position": "Генеральный директор",
+      "isOpen": true,
+      "children": [
+        {
+          "name": "Алиса Смит",
+          "position": "Директор",
+          "isOpen": true,
+          "workers": [
+            { "name": "Джон Доу", "position": "Менеджер", "isOpen": false },
+            { "name": "Алиса Смит", "position": "Координатор", "isOpen": false },
+            { "name": "Боб Джонсон", "position": "Аналитик", "isOpen": false }
+          ]
+        },
+        {
+          "name": "Эмили Браун",
+          "position": "Директор",
+          "isOpen": true,
+          "workers": [
+            { "name": "Эмили Браун", "position": "Супервайзер", "isOpen": false },
+            { "name": "Майкл Дэвис", "position": "Консультант", "isOpen": false },
+            { "name": "Эмма Уилсон", "position": "Ассистент", "isOpen": false }
+          ]
+        },
+        {
+          "name": "Эмма Дэвис",
+          "position": "Директор",
+          "isOpen": true,
+          "workers": [
+            { "name": "Оливер Тейлор", "position": "Специалист", "isOpen": false },
+            { "name": "София Мартинес", "position": "Координатор", "isOpen": false },
+            { "name": "Уильям Гарсия", "position": "Аналитик", "isOpen": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "az": [
+    {
+      "name": "Şəmsəddin Vəhbli",
+      "position": "İdarə heyətinin sədri",
+      "isOpen": true,
+      "children": [
+        {
+          "name": "Alisa Smit",
+          "position": "Direktor",
+          "isOpen": true,
+          "workers": [
+            { "name": "Cən Dov", "position": "Menecer", "isOpen": false },
+            { "name": "Alisa Smit", "position": "Koordinator", "isOpen": false },
+            { "name": "Bob Cohnson", "position": "Analitik", "isOpen": false }
+          ]
+        },
+        {
+          "name": "Emily Braun",
+          "position": "Direktor",
+          "isOpen": true,
+          "workers": [
+            { "name": "Emily Braun", "position": "Süpervizor", "isOpen": false },
+            { "name": "Mikayıl Devis", "position": "Konsultant", "isOpen": false },
+            { "name": "Emma Uilson", "position": "Asistent", "isOpen": false }
+          ]
+        },
+        {
+          "name": "Emma Devis",
+          "position": "Direktor",
+          "isOpen": true,
+          "workers": [
+            { "name": "Oliver Teylor", "position": "Spesialist", "isOpen": false },
+            { "name": "Sofiya Martinəs", "position": "Koordinator", "isOpen": false },
+            { "name": "Uilyam Qarsiya", "position": "Analitik", "isOpen": false }
+          ]
+        }
+      ]
+    }
+  ],
+  "en": [
+    {
+      "name": "Shamsaddin Vahabli",
+      "position": "CEO",
+      "isOpen": true,
+      "children": [
+        {
+          "name": "Alice Smith",
+          "position": "Director",
+          "isOpen": true,
+          "workers": [
+            { "name": "John Doe", "position": "Manager", "isOpen": false },
+            { "name": "Alice Smith", "position": "Coordinator", "isOpen": false },
+            { "name": "Bob Johnson", "position": "Analyst", "isOpen": false }
+          ]
+        },
+        {
+          "name": "Emily Brown",
+          "position": "Director",
+          "isOpen": true,
+          "workers": [
+            { "name": "Emily Brown", "position": "Supervisor", "isOpen": false },
+            { "name": "Michael Davis", "position": "Consultant", "isOpen": false },
+            { "name": "Emma Wilson", "position": "Assistant", "isOpen": false }
+          ]
+        },
+        {
+          "name": "Emma Davis",
+          "position": "Director",
+          "isOpen": true,
+          "workers": [
+            { "name": "Oliver Taylor", "position": "Specialist", "isOpen": false },
+            { "name": "Sophia Martinez", "position": "Coordinator", "isOpen": false },
+            { "name": "William Garcia", "position": "Analyst", "isOpen": false }
+          ]
+        }
+      ]
+    }
+  ]
+}

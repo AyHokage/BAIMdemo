@@ -1,0 +1,26 @@
+.editor {
+    width: 100%;
+    height: 300px;
+    margin: auto; 
+    display: block;
+    resize: none;
+    min-height: 200px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    color: grey;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.inputDesc {
+    resize: none;
+    min-height: 200px;
+    padding: 10px 20px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    color: grey;
+    font-size: 16px;
+    margin: 10px 0;
+  }
